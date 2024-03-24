@@ -32,8 +32,8 @@ This is a simple API for movie recommendation based on user ratings. It provides
 ## Running the API
 
 Run the following command to start the FastAPI server:
-   
-    ```bash
+
+    ```bash    
     uvicorn api:app --reload
     ```
 
@@ -61,6 +61,6 @@ The API will be available at http://localhost:8000.
 
 To get a recommendation for the movie "Toy Story", you can send a GET request to the `/recommendations/Toy Story` endpoint:
 
-    ```bash
+    ```bash    
     curl http://localhost:8000/recommendations/Tiy%20Story
     ```
