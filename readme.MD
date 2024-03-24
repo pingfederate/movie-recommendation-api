@@ -47,7 +47,7 @@ The API will be available at http://localhost:8000.
 - *Method:* GET
 - *Description:* Get a movie recommendation based on the provided movie name.
 - *Parameters:*
--- `movie_name` (str): The name of the movie for which to get a recommendation.
+    - `movie_name` (str): The name of the movie for which to get a recommendation.
 - *Response:* `movie_recommendation` (str):  The recommended movie name.
 
 ### Get All Movie Names
@@ -61,6 +61,6 @@ The API will be available at http://localhost:8000.
 
 To get a recommendation for the movie "Toy Story", you can send a GET request to the `/recommendations/Toy Story` endpoint:
 
-    ```bash    
+    ```bash
     curl http://localhost:8000/recommendations/Tiy%20Story
     ```
