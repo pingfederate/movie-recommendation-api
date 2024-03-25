@@ -1,10 +1,19 @@
 from typing import List
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from preprocessing import load_data, preprocess_data
 from model import train_model
 from random import choice
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 
 movies, ratings = load_data()
 movies_processed, ratings_processed = preprocess_data(movies, ratings)
