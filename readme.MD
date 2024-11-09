@@ -26,7 +26,7 @@ This is a simple API for movie recommendation based on user ratings. It provides
 3. Install dependencies:
     
     ```bash
-    pip install -r requirements.txt
+    py -m pip install -r requirements.txt
     ```
 
 ## Running the API
@@ -34,7 +34,7 @@ This is a simple API for movie recommendation based on user ratings. It provides
 Run the following command to start the FastAPI server:
 
     ```bash    
-    uvicorn api:app --reload
+    py -m uvicorn api:app --reload
     ```
 
 The API will be available at http://localhost:8000.
